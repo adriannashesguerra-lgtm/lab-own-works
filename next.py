@@ -83,4 +83,60 @@ def main():
             
 main()
 
-        
+"""
+file handling 
+"""
+# read
+file = open("shopping_list.txt", "r")
+cont = file.read()
+file.close()
+print(repr(cont))
+
+# using split
+file = open("shopping_list.txt", "r")
+cont = file.read()
+file.close()
+item = cont.split("\n")
+print(repr(item))
+
+# using sort
+file = open("shopping_list.txt", "r")
+cont = file.read()
+file.close()
+item = cont.split("\n")
+item.sort()
+print(item)
+
+# using loop in file handling
+file = open("shopping_list.txt", "r")
+cont = file.read()
+file.close()
+items = cont.split("\n")
+items.sort()
+for i in items:
+    print("- " + i)
+    
+# writing a file
+item = "banana\napple\norange\ngrapes\nmango"
+file = open("groceries.txt", "w")
+file.write(item)
+file.close()
+
+# adding to a file
+item = "\npomelo\nkiwi\nwatermelon"
+file = open("groceries.txt", "a")
+file.write(item)
+file.close()
+
+# using context manager for read
+with open("groceries.txt", "r") as file:
+    it = file.read()
+    print(it)
+    
+# using context manager for write
+with open("groceries.txt", "w") as file:
+    file.write("strawberry\nblueberry\nraspberry")
+    
+# using context manager for append
+with open("groceries.txt", "a") as file:
+    file.write("\npeach\nplum\nnectarine")

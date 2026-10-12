@@ -1,0 +1,6 @@
+strawberry
+blueberry
+raspberry
+peach
+plum
+nectarine
