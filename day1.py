@@ -74,3 +74,5 @@ finally:
     print(f"Subjects: {', '.join(student_info['subjects'])}")
     print(f"Is Student: {student_info['is_student']}")
     print("==================")
+    
+    

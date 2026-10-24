@@ -1,4 +1,4 @@
-def Comission_Calculator():
+def Commission_Calculator():
     # get the product code of the product sold
     print("Enter the product code of the product sold (VC, WP, FP, WT): ")
     pc = input().strip().upper()
@@ -29,4 +29,4 @@ def Comission_Calculator():
     print(f"Sales Amount: {sales_amount:.2f}")
     print(f"Commission Amount: {ca:.2f}")
     print("===============================")
-Comission_Calculator()
+Commission_Calculator()
