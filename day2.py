@@ -31,3 +31,16 @@ elif score >= 70:
     print ("You passed!")
 else:
     print("You failed!")
+    
+# using logical operators in if statements
+
+name = input("What is your name?: ").strip().title()
+
+if len(name) >= 5 and len(name) <= 10:
+    print("Your name is between 5 and 10 characters long.")
+    
+elif len(name) < 5 or len(name) > 10:
+    print("Your name is not between 5 and 10 characters long.")
+
+else:
+    print("Your name is exactly 5 or 10 characters long.")
